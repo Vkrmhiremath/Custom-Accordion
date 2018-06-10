@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/accordion/AccordionWebPart.js",
+      "manifest": "./src/webparts/accordion/AccordionWebPart.manifest.json",
+      "outputPath": "./dist/accordion-web-part.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "AccordionWebPartStrings": "webparts/accordion/loc/{locale}.js"  }
+}

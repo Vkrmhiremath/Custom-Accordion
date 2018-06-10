@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "onprem",
+    "version": "1.5.0",
+    "libraryName": "accordion",
+    "libraryId": "e25ee164-f943-443d-a9b6-f985926bba8d",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

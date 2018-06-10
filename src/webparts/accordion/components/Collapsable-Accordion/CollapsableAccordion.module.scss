@@ -1,0 +1,56 @@
+.CollapsableAccordion {
+  border: 1px solid #3d3d3d;;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-bottom: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.AccordionHeader {
+  background: #3d3d3d;;
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  font-family: font-bold, sans-serif;
+
+  &:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 45px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIGlkPSJDYXBhXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ3Ny4yIDQ3Ny4yOyIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0NzcuMiA0NzcuMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNmZmY7fTwvc3R5bGU+ICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgtMSwgMCwgMCwgLTEsIDQ3Ny4wOTk5NzYsIDQ3OC41KSI+ICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0gNzQuMTUgMjkxLjg1IEMgNzQuMTUgMjk1Ljk1IDc1Ljg1IDMwMC4wNSA3OC43NSAzMDIuOTUgTCAxMjMuMzUgMzQ3LjU1IEMgMTI2LjI1IDM1MC40NSAxMzAuMzUgMzUyLjE1IDEzNC40NSAzNTIuMTUgQyAxMzguNTUgMzUyLjE1IDE0Mi42NSAzNTAuNDUgMTQ1LjU1IDM0Ny41NSBMIDIzOC40NSAyNTQuNjUgTCAzMzEuMzUgMzQ3LjU1IEMgMzM0LjM1IDM1MC41NSAzMzguNTUgMzUyLjI1IDM0Mi43NSAzNTIuMTUgQyAzNDYuNzUgMzUyLjA1IDM1MC43NSAzNTAuMzUgMzUzLjY1IDM0Ny41NSBMIDM5OC4yNSAzMDIuOTUgQyA0MDEuMTUgMzAwLjA1IDQwMi44NSAyOTUuOTUgNDAyLjg1IDI5MS44NSBDIDQwMi44NSAyODcuNzUgNDAxLjE1IDI4My42NSAzOTguMjUgMjgwLjc1IEwgMjQ5LjY1IDEzMi4xNSBDIDI0Ni43NSAxMjkuMjUgMjQyLjY1IDEyNy41NSAyMzguNTUgMTI3LjU1IEMgMjM0LjQ1IDEyNy41NSAyMzAuMzUgMTI5LjI1IDIyNy40NSAxMzIuMTUgTCA3OC44NSAyODAuNzUgQyA3NS44NSAyODMuNjUgNzQuMTUgMjg3Ljc1IDc0LjE1IDI5MS44NSBMIDc0LjE1IDI5MS44NSBaIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyIvPiAgPC9nPjwvc3ZnPg==) no-repeat;
+    //background: url('./arrow-row-expand-down-ico-white.svg') ;
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+  }
+}
+
+.AccordionHeaderCollapsed {
+  &:after {
+    transform: rotate(0deg);
+  }
+}
+
+.AccordionBody {
+  height: auto;
+  opacity: 1;
+  overflow-y: hidden;
+  overflow-x: auto;
+  transition: all 0.2s;
+  padding: 15px 15px;
+}
+
+.AccordionBodyCollapsed {
+  height: 0;
+  opacity: 0;
+  padding: 0 70px;
+  transition: all 0.2s;
+}
